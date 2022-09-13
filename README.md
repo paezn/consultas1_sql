@@ -6,6 +6,8 @@
 
 ![tabla usuario](img/tabla_usuario.png "Tabla usuario")
 
+## COMANDO SELECT
+
 1. Para visualizar toda la información que contiene la tabla `usuario` se puede incluir con la instrucción SELECT el caracter '*' o cada uno de los campos de la tabla 
 
 `select * from usuario` 
@@ -52,4 +54,45 @@ O se puede utilizar el operador OR.
 
 `SELECT * FROM usuario WHERE nombre LIKE '%a%'`
 
-![Consult7](img/consulta7.png "Consulta7")
+![Consulta7](img/consulta7.png "Consulta7")
+
+8. Si se desea obtener los registros donde la cuarta letra del nombre sea una 'a'.
+
+`SELECT * FROM usuario WHERE nombre LIKE '___a%'`
+
+![Consulta8](img/consulta8.png "Consulta8")
+
+9. Si se desea obtener los registros cuya identificación esté entre el intervalo 110 y 150, se debe utilizar la cláusula BETWEEN, que sirve para especificar un intervalo de valores.
+
+`SELECT * FROM usuario WHERE Identificación BETWEEN '110` AND '150'
+
+![Consulta9](img/consulta9.png "Consulta9")
+
+
+
+## COMANDO DELETE
+
+10. Para elimiar solamente los registros cuya identificación sea mayor de 130.
+
+`DELETE FROM usuario WHERE Identificación>'130'`
+
+![Consulta10](img/consulta10.png "Consulta10")
+![Consulta10](img/consulta10_2.png "Consulta10")
+
+
+## COMANDO UPDATE
+
+11. Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya Identificación es 114.
+
+`UPDATE usuario SET ciudad_nac = 'Manizales' WHERE Identificación='114'`
+
+![Consulta11](img/consulta11.png "Consulta11")
+![Consulta11](img/consulta11_2.png "Consulta11")
+
+
+## INNER JOIN
+
+Permite obtener datos de dos o mas tablas.  Cuando se realiza la concatenación de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
+
+
+
