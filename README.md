@@ -94,5 +94,12 @@ O se puede utilizar el operador OR.
 
 Permite obtener datos de dos o mas tablas.  Cuando se realiza la concatenación de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
 
+## Tabla pedidos
 
+![Tabla pedidos](img/tabla_pedidos.png "Tabla pedidos")
 
+12. Para visualizar los campos idenficacion, nombre, apellidos de la tabla usuario y nropedido, fecha de compra, fecha de vencimiento y observación de la tabla pedidos, se debe realizar la siguiente instrucción SQL:
+
+`SELECT usuario.Identifacion, usuario.nombre, usuario.apellidos, pedido.nropedido, pedidos.fechaCompra, pedidos.fechaVence, pedidos.observacion FROM usuario INNER JOIN pedidos ON usuario.Identificacion = pedidos.Identificacion`
+
+![Consulta12](img/consulta12.png "Consulta12")
