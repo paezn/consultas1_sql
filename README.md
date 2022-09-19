@@ -103,3 +103,9 @@ Permite obtener datos de dos o mas tablas.  Cuando se realiza la concatenación 
 `SELECT usuario.Identifacion, usuario.nombre, usuario.apellidos, pedido.nropedido, pedidos.fechaCompra, pedidos.fechaVence, pedidos.observacion FROM usuario INNER JOIN pedidos ON usuario.Identificacion = pedidos.Identificacion`
 
 ![Consulta12](img/consulta12.png "Consulta12")
+
+13. Para visualizar todos los campos de las tablas usuario y pedidos donde identificación sea mayor que 100, se debe realizar la siguiente instrucción:
+
+`SELECT usuario.*, pedidos.* FROM usuario INNER JOIN pedidos ON usuario.Identificación = pedidos.Identificación WHERE usuario.Identificación > 100`
+
+![Consulta13](img/consulta13.png "Consulta13")
